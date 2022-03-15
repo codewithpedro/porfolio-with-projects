@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /* Colors */
+  --clr-dark-black: #161619;
+  --clr-dark-blue: #1a1b21;
+  --clr-mid-blue: #23252c;
+  --clr-light-blue: #5093e2;
+  --clr-light-grey: #dcdcdc;
+  --clr-grey: #918e9b;
+  --clr-sunset-orange: #f3bf99;
+  --clr-white: white;
+
+  /* Font sizes */
+  --fs-200: 0.875rem;
+  --fs-300: 0.9375rem;
+  --fs-400: 1rem;
+  --fs-500: 1.5rem;
+  --fs-600: 1.7rem;
+  --fs-700: 3rem;
+
+  /* Font Families */
+  --ff-1: "Inter", serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Reset Margins */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+picture {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-weight: 400;
+}
+
+/* Set up the body */
+body {
+  font-family: var(--ff-1);
+  font-size: var(--fs-400);
+  color: var(--clr-white);
+  background-color: var(--clr-mid-blue);
+  line-height: 1.5;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow-x: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+/* Images easier */
+img,
+picture {
+  max-width: 100%;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Remove animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
