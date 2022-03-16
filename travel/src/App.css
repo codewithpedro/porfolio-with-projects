@@ -1,5 +1,194 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+:root {
+  --clr-pink: #f55a5a;
+  --clr-white: #fff;
+  --clr-grey: #918e9b;
+
+  --fs-100: 0.66rem; /* 10px */
+  --fs-200: 0.8rem;
+  --fs-300: 1rem; /* 16px */
+  --fs-400: 1.5rem; /* 24px */
+
+  --ff-1: "Inter", sans-serif;
+
+  --fw-200: 200;
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+}
+/* ------------------- */
+/* Resets              */
+/* ------------------- */
+
+/* Box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+/* Reset margin */
+h1,
+h2,
+h3,
+h4,
+p,
+picture,
+img {
+  margin: 0;
+}
+
+picture,
+img {
+  display: block;
+  width: 100%;
+}
+
+hr {
+  border: 1px solid #f5f5f5;
+}
+
+body {
+  font-family: var(--ff-1);
+}
+
+/* General */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  place-items: center;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  padding: 0 70px;
+  margin: 0 auto;
+}
+
+/* Colors */
+.bg-pink {
+  background-color: var(--clr-pink);
+}
+
+.text-pink {
+  color: var(--clr-pink);
+}
+
+.text-white {
+  color: var(--clr-white);
+}
+
+.text-grey {
+  color: var(--clr-grey);
+}
+
+/* font family */
+.ff-1 {
+  font-family: var(--ff-1);
+}
+
+/* Text size */
+
+.fs-100 {
+  font-size: var(--fs-100);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+/* Font weight */
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+/* Line space */
+.letter-space-1 {
+  letter-spacing: 3px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* ------------------- */
+/* Layout              */
+/* ------------------- */
+
+/* header  */
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header .logo-title {
+  margin-left: 10px;
+}
+
+.main {
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+.article {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.article img {
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.article .info {
+  margin: auto 0;
+  margin-left: 2em;
+}
+
+.article .info .info-map {
+  margin-bottom: 0.5em;
+}
+
+.article .info .info-title {
+  margin-bottom: 0.8em;
+}
+
+.article .info .info-date {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.article .info .info-map-link {
+  margin-left: 2rem;
+}
+
+.article .info .info-desc {
+  max-width: 370px;
 }
