@@ -50,12 +50,36 @@ picture {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
 p {
   font-weight: 400;
+}
+
+h1 {
+  font-size: var(--fs-500);
+}
+
+h2 {
+  font-size: var(--fs-400);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: var(--fs-300);
+}
+
+p {
+  font-size: var(--fs-200);
+}
+
+small {
+  font-size: var(--fs-200);
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Set up the body */
@@ -64,7 +88,6 @@ body {
   font-size: var(--fs-400);
   color: var(--clr-white);
   background-color: var(--clr-mid-blue);
-  line-height: 1.5;
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -74,10 +97,6 @@ img,
 picture {
   max-width: 100%;
   display: block;
-}
-
-a {
-  text-decoration: none;
 }
 
 /* Remove animations */
@@ -102,44 +121,22 @@ ul {
 
 /* General */
 
-.flex {
-  display: flex;
-  gap: var(--gap, 0.5rem);
+.container {
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
-.flex-center {
-  place-content: center;
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flowspace, 5px);
 }
 
-/* Colors */
-
-.bg-dark-blue {
-  background-color: var(--clr-dark-blue);
-}
-
-.bg-mid-blue {
-  background-color: var(--clr-mid-blue);
-}
-.bg-dark-black {
-  background-color: var(--clr-dark-black);
-}
+/* Text Colors */
 
 .text-sunset-orange {
   color: var(--clr-sunset-orange);
 }
-.text-accent {
-  color: var(--bg-dark-blue);
-}
 
 /* typography */
-
-.text-center {
-  text-align: center;
-}
-
-.ff-1 {
-  font-family: (--ff-1);
-}
 
 .letter-spacing-1 {
   letter-spacing: 4.75px;
@@ -151,42 +148,14 @@ ul {
   letter-spacing: 2.35px;
 }
 
-.fs-700 {
-  font-size: var(--fs-700);
-}
-.fs-600 {
-  font-size: var(--fs-600);
-}
-.fs-500 {
-  font-size: var(--fs-500);
-}
-.fs-400 {
-  font-size: var(--fs-400);
-}
-.fs-300 {
-  font-size: var(--fs-300);
-}
-.fs-200 {
-  font-size: var(--fs-200);
-}
-
-.fs-900,
-.fs-800,
-.fs-700,
-.fs-600 {
-  line-height: 1.1;
-}
-
-.fw-600 {
-  font-weight: 600;
-}
-
 /* ------------------- */
 /* Components          */
 /* ------------------- */
 
 .btn {
   border-radius: 5px;
+  font-size: var(--fs-300);
+  font-family: inherit;
 }
 
 /* Button */
@@ -202,53 +171,79 @@ ul {
   color: var(--clr-dark-blue);
 }
 
-.flow > *:where(:not(:first-child)) {
-  margin-top: var(--flowspace, 1.5rem);
-}
-
 /* ----------------------------- */
-/* Page specific background      */
+/* Component specific            */
 /* ----------------------------- */
 
-.portrait {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
+/* General for entire profile */
 .card {
   width: 317px;
   margin: 0 auto;
+  background-color: var(--clr-dark-blue);
 }
 
-.card-container {
-  padding-left: 35px;
-  padding-right: 35px;
-}
-
+/* Info component */
 .info {
-  padding-top: 30px;
-  padding-bottom: 45px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.info-about h2,
-.info-interests h2 {
-  margin-bottom: 0.4rem;
+.info--portrait {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 20px;
 }
 
-.social-list {
+.info--name {
+  margin-bottom: 20px;
+}
+
+.info--contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* About Component */
+
+.about {
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  margin-bottom: 10px;
+}
+
+/* Interest component */
+
+.interests {
+  margin-bottom: 20px;
+}
+
+.interests h2 {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
   padding-top: 19px;
   padding-bottom: 19px;
 }
 
-.social-list ul {
+footer ul {
+  display: flex;
+  gap: 30px;
   padding-left: 0;
-  --gap: 2em;
   justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.social-list ul li a {
+footer ul li a {
   font-size: var(--fs-700);
   color: var(--clr-grey);
+}
+
+footer ul li a:hover {
+  color: var(--clr-sunset-orange);
 }
