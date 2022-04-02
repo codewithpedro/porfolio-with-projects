@@ -1,0 +1,85 @@
+:root {
+  /* Colors */
+
+  /* Font sizes */
+
+  /* Font family */
+
+}
+
+/* Resets */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+/* Layout */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation--menu {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav--social{
+  width: 45px;
+}
+
+/* CheckBox properties*/
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.nav--icon:focus {
+  outline: blue;
+}
+
+.checkbox:checked + .nav--mode .ball {
+  transform: translate(24px);
+}
+
+/* Label */
+.nav--mode {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 50px;
+  height: 26px;
+  width: 50px;
+  position: relative;
+}
+
+.nav--icon {
+  width: 18px;
+}
+
+.nav--moon{
+  filter: invert(98%) sepia(99%) saturate(7495%) hue-rotate(1deg) brightness(106%) contrast(101%);
+}
+
+.nav--sun {
+  filter: invert(92%) sepia(7%) saturate(7074%) hue-rotate(319deg) brightness(102%) contrast(98%);
+}
+
+.ball {
+  background-color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+}
