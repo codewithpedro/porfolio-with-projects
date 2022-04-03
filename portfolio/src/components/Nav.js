@@ -20,7 +20,7 @@ export default function Nav(props){
     <div className="navigation">
       <div className="container">
         <div className="navigation-flex">
-          <h4>Jovany</h4>
+          <h4><span className="text-colored">Jovany</span></h4>
 
           <div className="navAndmode">
 

@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav';
+import Hero from './components/Hero'
+import Projects from './components/Projects';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -17,9 +19,9 @@ function App() {
 
   return (
     <div>
-      <Nav 
-        handleClick={toggleMode}
-        />
+      <Nav handleClick={toggleMode}/>
+      <Hero />
+      <Projects />
     </div>
   );
 }
