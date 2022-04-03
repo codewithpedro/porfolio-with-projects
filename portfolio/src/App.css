@@ -1,56 +1,260 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
 :root {
   /* Colors */
+  --clr-light-dark-blue: 231 16% 24%;
+  --clr-dark-blue: 232 17% 17%;
+  --clr-white: 0 0% 100%;
+  --clr-black: 0 100% 0%;
+  --clr-sunset-pink: 12 100% 74%;
+  --clr-light-grey: 0 0% 44%;
 
   /* Font sizes */
-
+  --fs-400: 1rem;
+  --fs-500: 1.2rem;
+  --fs-600: 1.5rem;
+  --fs-700: 2rem;
   /* Font family */
-
+  --ff-1: "Work Sans", sans-serif;
 }
 
-/* Resets */
+/* ------------------- */
+/* Resets              */
+/* ------------------- */
 *, *::before, *::after{
   box-sizing: border-box;
 }
 
-/* Layout */
+a {
+  text-decoration: none;
+  font-size: var(--fs-500);
+  color: inherit;
+}
 
+.light a {
+  color: hsl(var(--clr-light-grey));
+}
+
+h4 {
+  font-size: var(--fs-600);
+  color: #F8F84C;
+}
+
+.light h4 {
+  color: hsl(var(--clr-sunset-pink));
+}
+
+body {
+  background-color: hsl(var(--clr-dark-blue));
+  color: hsl(var(--clr-white));
+  font-family: var(--ff-1);
+}
+
+.light {
+  background-color: hsl(var(--clr-white));
+  color: hsl(var(--clr-black));
+}
+
+/* ------------------- */
+/* General             */
+/* ------------------- */
+.container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute; 
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px; 
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ------------------- */
+/* Layout              */
+/* ------------------- */
+
+/* Navigation */
 .navigation {
+  background-color: hsl(var(--clr-light-dark-blue));
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
+}
+
+.light .navigation {
+  background-color: hsl(var(--clr-white));
+}
+
+.navigation-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Navigation and mode button */
+.navAndmode {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@media (mix-width: 600px) {
+  .navAndmode {
+    flex-direction: row;
+  }
+}
+
+/* Navigation mobile settings */
+.navigation .mobile-nav-toggle {
+  border: 0;
+  width: 2.5rem;
+  filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(167deg) brightness(107%) contrast(100%);
+  z-index: 2000;
+  background: transparent;
+  aspect-ratio: 1;
+  margin-left: 20px;
+}
+
+.light .navigation .mobile-nav-toggle {
+  filter: invert(0%) sepia(1%) saturate(11%) hue-rotate(289deg) brightness(97%) contrast(100%);
+}
+
+/* Removes navigation bar with larger screen */
+@media (min-width: 650px) {
+  .navigation .mobile-nav-toggle {
+    display: none;
+  }
+}
+
+/* Navigation Menu */
 .navigation--menu {
   display: flex;
   align-items: center;
 }
+/* Navigation  */
+.navigation--menu nav {
+  display: none;
+}
 
-nav {
+@media (min-width: 650px) {
+  .navigation--menu nav {
+    display: flex;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 800px) {
+  .navigation--menu nav {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navigation--menu nav.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(var(--clr-dark-blue));
+    position: fixed;
+    inset: 0 0 0 0;
+    z-index: 1000;
+    padding-top: min(20rem, 15vh);
+  } 
+
+  .light .navigation--menu nav.active {
+    background-color: hsl(var(--clr-white));
+  }
+}
+
+@media (min-width: 650px) {
+  .navigation--menu nav.active {
+    display: flex;
+  }
+}
+
+
+/* Navigation Links */
+.navigation--menu nav .links {
   display: flex;
-  align-items: center;
+  flex-direction: column;  
 }
 
-.nav--social{
-  width: 45px;
+.navigation--menu nav .links * {
+  padding: var(--underline-gap, 1rem) 0;
 }
 
-/* CheckBox properties*/
+@media (min-width: 650px) {
+  .navigation--menu nav .links {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 40px;
+    padding: 0;
+  }
 
-.checkbox {
-  opacity: 0;
-  position: absolute;
+  .navigation--menu nav .links *:not(:first-child) {
+    margin-left: 20px;
+  }
 }
 
-.nav--icon:focus {
-  outline: blue;
+@media (min-width: 800px) {
+  .navigation--menu nav .links {
+    margin-right: 60px;
+  }
+  .navigation--menu nav .links *:not(:first-child) {
+    margin-left: 40px;
+  }
 }
 
-.checkbox:checked + .nav--mode .ball {
-  transform: translate(24px);
+/* Navigation socail icons */
+.navigation--menu .social {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
 }
 
-/* Label */
-.nav--mode {
+.navigation--menu .social .icon {
+  width: 30px;
+}
+
+.navigation--menu .social *:not(:first-child) {
+  margin-top: 40px;
+}
+
+.navigation--menu .social .linkedin {
+  filter: invert(29%) sepia(46%) saturate(7295%) hue-rotate(199deg) brightness(87%) contrast(92%);
+  margin-right: 20px;
+}
+
+.navigation--menu .social .github {
+  filter: invert(100%) sepia(73%) saturate(183%) hue-rotate(277deg) brightness(117%) contrast(100%);
+}
+
+.light .navigation--menu .social .github {
+  filter: invert(0%) sepia(100%) saturate(7436%) hue-rotate(331deg) brightness(89%) contrast(114%);
+}
+
+@media (min-width: 650px) {
+  .navigation--menu .social {
+    flex-direction: row;
+    justify-content: unset;
+    align-items: center;
+    margin-top: unset;
+  }
+
+  .navigation--menu .social *:not(:first-child) {
+    margin-top: unset;
+  }
+  
+}
+
+
+/* Navigation Mode Button */
+.navigation--mode label {
   background-color: #111;
   display: flex;
   align-items: center;
@@ -62,19 +266,19 @@ nav {
   position: relative;
 }
 
-.nav--icon {
+.navigation--mode .icon {
   width: 18px;
 }
 
-.nav--moon{
+.navigation--mode .moon{
   filter: invert(98%) sepia(99%) saturate(7495%) hue-rotate(1deg) brightness(106%) contrast(101%);
 }
 
-.nav--sun {
+.navigation--mode .sun {
   filter: invert(92%) sepia(7%) saturate(7074%) hue-rotate(319deg) brightness(102%) contrast(98%);
 }
 
-.ball {
+.navigation--mode .ball {
   background-color: #fff;
   position: absolute;
   top: 2px;
@@ -82,4 +286,15 @@ nav {
   height: 22px;
   width: 22px;
   border-radius: 50%;
+}
+
+/* Mode Button --- CheckBox properties*/
+
+.navigation--mode .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.navigation--mode .checkbox:checked + label .ball {
+  transform: translate(24px);
 }

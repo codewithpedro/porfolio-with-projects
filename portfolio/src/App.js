@@ -4,15 +4,20 @@ import Nav from './components/Nav';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
+
+  if (isDarkMode) {
+    document.body.classList.remove("light");
+  } else {
+    document.body.classList.add("light");
+  }
+  
   function toggleMode() {
     setIsDarkMode(prevMode => !prevMode);
   }
 
-  console.log(isDarkMode);
   return (
     <div>
       <Nav 
-        mode={isDarkMode}
         handleClick={toggleMode}
         />
     </div>
