@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Project({id, title, img, toolbox, desc, previewUrl, githubUrl}) {
   const tools = toolbox.map(toolbox => (
     <div className="pill" key={toolbox.id}>
@@ -22,7 +24,7 @@ export default function Project({id, title, img, toolbox, desc, previewUrl, gith
           <h4 className="title-desc">Description</h4>
           <p className="desc">{desc}</p>
           <div className="btn-flex">
-            <a className="btn btn-mid btn-white btn-preview" href={previewUrl} target="_blank" rel="noreferrer noopener"><i className="fa-solid fa-up-right-from-square"></i> Preview</a>
+            <Link className="btn btn-mid btn-white btn-preview" to={previewUrl}><i className="fa-solid fa-up-right-from-square"></i>Preview</Link>
             <a className="btn btn-transparent btn-small" href={githubUrl} target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-github-square"></i> GitHub Code</a>
           </div>
         </div>

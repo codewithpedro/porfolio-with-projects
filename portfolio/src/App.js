@@ -1,15 +1,17 @@
 import { useState } from 'react';
 import './App.css';
-import Nav from './components/Nav';
-import Hero from './components/Hero'
-import Projects from './components/Projects';
-import SmallProjects from './components/SmallProjects';
-import Skills from './components/Skills';
-import Contact from './components/Contact'
-import Footer from './components/Footer';
+import {Routes, Route} from "react-router-dom";
+import Home from './components/home/Home';
+import UnitConverter from './components/unit-converter/UnitConverter';
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  // is local storage for mode null
+  const isNull = localStorage.getItem("mode") === null;  
+  // set isDarkMode true if null, otherwise set to 
+  //local storage "mode"
+  const [isDarkMode, setIsDarkMode] = useState(isNull ? true : JSON.parse(localStorage.getItem("mode")));
+  localStorage.setItem("mode", JSON.stringify(isDarkMode));  
+  localStorage.getItem("mode");
 
   if (isDarkMode) {
     document.body.classList.remove("light");
@@ -19,17 +21,16 @@ function App() {
   
   function toggleMode() {
     setIsDarkMode(prevMode => !prevMode);
+    
   }
 
   return (
     <div>
-      <Nav handleClick={toggleMode}/>
-      <Hero />
-      <Projects />
-      <SmallProjects />
-      <Skills />
-      <Contact />
-      <Footer />
+      <Routes>
+        <Route exact path="/" element={<Home toggleMode={toggleMode} mode={isDarkMode}/>} />
+        <Route path="/unit-converter" element={<UnitConverter toggleMode={toggleMode} mode={isDarkMode}/>} />
+
+      </Routes>
     </div>
   );
 }

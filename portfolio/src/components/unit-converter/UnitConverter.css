@@ -1,0 +1,89 @@
+:root {
+  /* Colors */
+  --clr-light-dark-blue: 231 16% 24%;
+  --clr-dark-blue: 232 17% 17%;
+  --clr-mid-blue: 201 100% 35%;
+  --clr-white: 0 0% 100%;
+  --clr-black: 0 100% 0%;
+  --clr-soft-black: 0 0% 30%;
+  --clr-sunset-pink: 12 100% 74%;
+  --clr-light-grey: 0 0% 44%;
+  --clr-yellow: 60 92% 64%;
+}
+
+/* Layout */
+
+/* Layout */
+
+.card {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card--main .title {
+  margin-bottom: 25px;
+}
+
+ 
+.light .card h3, 
+.light .card p {
+  color: hsl(var(--clr-soft-black));
+}
+
+.card--main input {
+  background-color: transparent;
+  border: grey 3px solid;
+  border-radius: 10px;
+  font-size: 60px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 40px;
+  color: inherit;
+}
+
+@media (min-width: 500px) {
+  .card--main input {
+    width: 400px;
+  }
+}
+
+.card--main input::placeholder {
+  font-size: 30px;
+  color: inherit;
+}
+
+.card--main input:-moz-placeholder { /* Firefox 18- */
+  text-align: center;  
+}
+
+.card--main input::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;  
+}
+
+.card--main input:-ms-input-placeholder {  
+  text-align: center; 
+}
+
+/* Remove inputs for number */
+.card input::-webkit-outer-spin-button,
+.card input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.card input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.card--conversions .unit-conversion:not(:last-child){
+  margin-bottom: 35px;
+}
+
+.unit-conversion .title {
+  margin-bottom: 15px;
+}
+
+.unit-conversion p {
+  margin-bottom: 10px;
+}

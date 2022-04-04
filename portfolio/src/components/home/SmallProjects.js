@@ -1,4 +1,4 @@
-import smallProjectData from "../data/smallProjectData";
+import smallProjectData from "../../data/smallProjectData";
 import SmallProject from "./SmallProject";
 
 export default function SmallProjects() {

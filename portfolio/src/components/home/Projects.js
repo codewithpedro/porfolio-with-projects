@@ -1,6 +1,6 @@
 
 import Project from "./Project";
-import mainProjectData from "../data/mainProjectData";
+import mainProjectData from "../../data/mainProjectData";
 
 export default function Projects() {
   const myProjects = mainProjectData.map(project => {

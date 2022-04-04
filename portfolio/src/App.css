@@ -234,6 +234,12 @@ body {
   }
 }
 
+.height {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
 .sr-only {
   position: absolute; 
   width: 1px;
@@ -1207,8 +1213,8 @@ body {
 
 @media (min-width: 600px) {
   .footer .container {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 }
 
@@ -1217,11 +1223,17 @@ body {
 }
 
 .footer-nav {
-  margin-bottom: 50px;
+  display: flex;
+  gap: 30px;
 }
 
-.footer-nav *:not(:last-child) {
-  margin-right: 30px;
+
+
+@media (min-width: 900px) {
+  .footer-nav  {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 
 .footer-logo {
@@ -1249,11 +1261,11 @@ body {
 
 .footer-contact .email {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer-contact i {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .footer .fa-pinterest-square {

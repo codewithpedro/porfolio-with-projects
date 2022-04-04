@@ -1,5 +1,5 @@
-import ps from "../img/adobe-ps-transparent.svg";
-import xd from "../img/adobe-xd-transparent.svg";
+import ps from "../../img/adobe-ps-transparent.svg";
+import xd from "../../img/adobe-xd-transparent.svg";
 
 export default function Skills(){
   return (

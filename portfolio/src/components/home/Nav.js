@@ -1,15 +1,16 @@
-import github from "../img/github-square-brands.svg";
-import linkedin from "../img/linkedin-brands.svg";
-import sun from "../img/sun-solid.svg";
-import moon from "../img/moon-solid.svg";
-import barsSolid from "../img/bars-solid.svg";
-import xSolid from "../img/x-solid.svg"
+import github from "../../img/github-square-brands.svg";
+import linkedin from "../../img/linkedin-brands.svg";
+import sun from "../../img/sun-solid.svg";
+import moon from "../../img/moon-solid.svg";
+import barsSolid from "../../img/bars-solid.svg";
+import xSolid from "../../img/x-solid.svg"
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Nav(props){
   const [isOpen, setIsOpen] = useState(false);
-
+  
   function setToggle() {
     setIsOpen(prevOpen => !prevOpen)
   }
@@ -18,7 +19,7 @@ export default function Nav(props){
     <div className="navigation">
       <div className="container">
         <div className="navigation-flex">
-          <h4><span className="text-colored">Jovany</span></h4>
+          <Link to="/"><h4><span className="text-colored">Jovany</span></h4></Link>
 
           <div className="navAndmode">
 
@@ -30,9 +31,9 @@ export default function Nav(props){
               <nav className={isOpen ? "nav active" : "nav"}>
                 {/* Primary Links */}
                 <div id="primary-navigation" className="links">
-                    <a href="#home" onClick={setToggle}>Home</a>
-                    <a href="#projects" onClick={setToggle}>Projects</a>
-                    <a href="#contact" onClick={setToggle}>Hire Me</a>
+                    <a href="/#home" onClick={setToggle}>Home</a>
+                    <a href="/#projects" onClick={setToggle}>Projects</a>
+                    <a href="/#contact" onClick={setToggle}>Hire Me</a>
                 </div>
                 {/* Primary Social Links */}
                 <div className="social">
@@ -43,11 +44,11 @@ export default function Nav(props){
 
               {/* Mode Button*/}
               <div className="navigation--mode">
-                <input type="checkbox" className="checkbox" id="checkbox" value={props.mode} onClick={props.handleClick}
+                <input type="checkbox" className="checkbox" id="checkbox" defaultChecked={props.mode} onChange={props.handleClick}
                 />
                 <label htmlFor="checkbox">
-                  <img src={sun} className="icon sun" alt="moon"/>
                   <img src={moon} className="icon moon" alt="sun"/>
+                  <img src={sun} className="icon sun" alt="moon"/>
                   <div className="ball"></div>
                 </label>
 
