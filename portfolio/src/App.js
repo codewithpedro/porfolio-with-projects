@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import SmallProjects from './components/SmallProjects';
 import Skills from './components/Skills';
 import Contact from './components/Contact'
+import Footer from './components/Footer';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -21,13 +22,14 @@ function App() {
   }
 
   return (
-    <div id="home">
+    <div>
       <Nav handleClick={toggleMode}/>
       <Hero />
       <Projects />
       <SmallProjects />
       <Skills />
       <Contact />
+      <Footer />
     </div>
   );
 }

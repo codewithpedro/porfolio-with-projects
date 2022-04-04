@@ -16,8 +16,8 @@ export default function Contact(){
   }
 
   return (
-    <div className="contact" id="contact">
-      <i class="fa-solid fa-message"></i>
+    <div className="contact overflow" id="contact">
+      <i className="fa-solid fa-message"></i>
       <div className="container">
         <h2 className="heading text-colored">Hire Me</h2>
         <div className="contact-flex">
@@ -28,13 +28,15 @@ export default function Contact(){
             <input type="email" id="email" name="email" onChange={handleChange}/><br/>
             <label htmlFor="message">Message:</label><br/>
             <textarea name="message" onChange={handleChange}></textarea><br />
-            <button className="btn btn-mid"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+            <button className="btn btn-mid"><i className="fa-solid fa-paper-plane"></i> Submit</button>
           </form>
           <hr></hr>
           <div className="other-contact">
             <h3 className="heading">Contact me in <br/> other ways</h3>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-pinterest-square"></i>
+            <div className="other-contact-flex">
+              <a href="https://www.linkedin.com/in/itsjovany/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.pinterest.com/jovanydev" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-pinterest-square"></i></a>
+            </div>
             <a href="mailto:gomez.pedro@Outlook.com">gomez.pedro@outlook.com</a>
           </div>
           
