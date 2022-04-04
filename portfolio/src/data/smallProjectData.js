@@ -2,25 +2,31 @@ export default [
   {
     id: 1,
     title: "Password Generator",
-    img: "../img/password",
-    toolbox: ["HTML", "CSS", "JavaScript", "E12", "API", "React", "Mobile First"]
+    img: "/img/portrait.png",
+    previewUrl: "https://github.com/"
   },
   {
     id: 2,
     title: "Invoice Creator",
-    img: "../img/password",
-    toolbox: ["HTML", "CSS", "JavaScript", "E12", "API", "React", "Mobile First"]
+    img: "/img/portrait.png",
+    previewUrl: "https://github.com/"
   },
   {
     id: 3,
     title: "Unit Converter",
-    img: "../img/password",
-    toolbox: ["HTML", "CSS", "JavaScript", "E12", "API", "React", "Mobile First"]
+    img: "/img/portrait.png",
+    previewUrl: "https://github.com/"
   },
   {
     id: 4,
     title: "Travel Journal",
-    img: "../img/password",
-    toolbox: ["HTML", "CSS", "JavaScript", "E12", "API", "React", "Mobile First"]
+    img: "/img/portrait.png",
+    previewUrl: "https://github.com/"
+  },
+  {
+    id: 5,
+    title: "Digital Business Card",
+    img: "/img/portrait.png",
+    previewUrl: "https://github.com/"
   }
 ]

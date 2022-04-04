@@ -11,7 +11,7 @@ export default function Projects() {
   })
 
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div className="container">
         <h2 className="title">Latest Web Projects</h2>
         {myProjects}

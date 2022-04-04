@@ -14,8 +14,6 @@ export default function Nav(props){
     setIsOpen(prevOpen => !prevOpen)
   }
 
-  console.log("Nav is open: " + isOpen);
-
   return (
     <div className="navigation">
       <div className="container">
@@ -30,11 +28,13 @@ export default function Nav(props){
             {/* Primaray Navigation */}
             <div className="navigation--menu">
               <nav className={isOpen ? "nav active" : "nav"}>
+                {/* Primary Links */}
                 <div id="primary-navigation" className="links">
-                    <a href="#home">Home</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#hireme">Hire Me</a>
+                    <a href="#home" onClick={setToggle}>Home</a>
+                    <a href="#projects" onClick={setToggle}>Projects</a>
+                    <a href="#contact" onClick={setToggle}>Hire Me</a>
                 </div>
+                {/* Primary Social Links */}
                 <div className="social">
                   <a href="https://www.linkedin.com/in/itsjovany/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin logo" className="icon linkedin"/></a>
                   <a href="https://github.com/jovanydev" target="_blank" rel="noopener noreferrer"><img src={github} alt="github logo" className="icon github"/></a>

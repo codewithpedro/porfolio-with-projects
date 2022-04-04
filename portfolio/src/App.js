@@ -3,6 +3,9 @@ import './App.css';
 import Nav from './components/Nav';
 import Hero from './components/Hero'
 import Projects from './components/Projects';
+import SmallProjects from './components/SmallProjects';
+import Skills from './components/Skills';
+import Contact from './components/Contact'
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -18,10 +21,13 @@ function App() {
   }
 
   return (
-    <div>
+    <div id="home">
       <Nav handleClick={toggleMode}/>
       <Hero />
       <Projects />
+      <SmallProjects />
+      <Skills />
+      <Contact />
     </div>
   );
 }
