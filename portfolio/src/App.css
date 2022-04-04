@@ -656,6 +656,10 @@ body {
     padding-top: 50px;
     padding-bottom: 10px;
   }
+
+  .projects .title {
+    margin-bottom: 70px;
+  }
 }
 
 /* ------------------- */
@@ -957,15 +961,36 @@ body {
   background-color: hsl(var(--clr-light-dark-blue));
   padding-top: 60px;
   padding-bottom: 90px;
+  
 }
 
 .light .skills {
-  color: hsl(var(--clr-white));
   background-color: hsl(var(--clr-sunset-pink));
+}
+
+.skills .heading {
+  color: hsl(var(--clr-white));
 }
 
 .skills i {
   font-size: 3rem;
+  color: hsl(var(--clr-yellow));
+}
+
+.light .skills i {
+  color: hsl(var(--clr-white));
+}
+
+.skills {
+  color: red;
+}
+
+.skills .icon {
+  filter: invert(86%) sepia(97%) saturate(389%) hue-rotate(354deg) brightness(105%) contrast(94%);
+}
+
+.light .skills .icon {
+  filter: invert(100%) sepia(0%) saturate(7464%) hue-rotate(23deg) brightness(98%) contrast(103%);
 }
 
 .skills-flex {
