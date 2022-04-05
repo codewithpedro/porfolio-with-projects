@@ -52,7 +52,7 @@ export default function PasswordGenerator(props){
             <h4 className="subtitle">Never use an insecure password again.</h4>
             <button className="btn" id="passwordBtn" onClick={generatePasswords}><i className="fa-solid fa-bolt-lightning"></i> Generate passwords</button>
             <div className="length">
-              <label htmlFor="length-input">Length (6 to 12 length): </label> 
+              <label htmlFor="length-input">Length (6 to 16 length): </label> 
               <input type="number" value={valueLength} onChange={e => setValueLength(e.target.value)} className="input" id="length-input" required />
             </div>
             

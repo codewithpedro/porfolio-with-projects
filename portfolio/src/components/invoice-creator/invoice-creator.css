@@ -1,0 +1,181 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+:root {
+  /* Colors */
+  --clr-light-dark-blue: 231 16% 24%;
+  --clr-dark-blue: 232 17% 17%;
+  --clr-mid-blue: 201 100% 35%;
+  --clr-white: 0 0% 100%;
+  --clr-black: 0 100% 0%;
+  --clr-soft-black: 0 0% 30%;
+  --clr-sunset-pink: 12 100% 74%;
+  --clr-light-grey: 0 0% 44%;
+  --clr-yellow: 60 92% 64%;
+
+  /* Font famliy */
+  --ff-1: "Work Sans", sans-serif;
+  --ff-2: "Inter", sans-serif;
+  --ff-3: "Harla", sans-serif;
+}
+
+.invoice-creator h5 {
+    font-size: .8rem;
+}
+
+@media (min-width: 600px) {
+  .invoice-creator h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .invoice-creator h4 {
+    font-size: 1.5rem;
+  }
+}
+
+.invoice-creator {
+  margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+  .invoice-creator {
+    margin-top: unset;
+  }
+  
+}
+
+/* ------------------- */
+/* Components          */
+/* ------------------- */
+
+.invoice-creator .services .service-item .btn-no-fill {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: hsl(var(--clr-white));
+}
+
+.light .invoice-creator .services .service-item .btn-no-fill {
+  color: hsl(var(--clr-soft-black));
+}
+
+.invoice-creator .btn-invoice {
+  width: 100%;
+}
+
+/* ------------------- */
+/* Layout              */
+/* ------------------- */
+
+.invoice-creator, 
+.invoice-creator .hero {
+  text-align: center;
+}
+
+.invoice-creator .hero {
+  margin-bottom: 40px;
+}
+
+.invoice-creator .hero .title {
+  margin-bottom: 10px;
+}
+
+.invoice-creator .linebreak {
+  border: 1px solid hsl(var(--clr-yellow));
+  margin-bottom: 40px;
+}
+
+.light .invoice-creator .linebreak {
+  border: 1px solid hsl(var(--clr-soft-black));
+}
+
+.invoice-creator .services-btn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 700px) {
+  .invoice-creator .services-btn {
+    max-width: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 20px;
+  }
+}
+
+.invoice-creator .services .title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.invoice-creator .services .service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 700px) {
+  .invoice-creator .services .service-item {
+    margin-bottom: 40px;
+  }
+}
+
+.invoice-creator .services .service-item .title-remove {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 5px;
+}
+
+.invoice-creator .services .service-item .title-remove .btn-no-fill {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 700px) {
+  .invoice-creator .services .service-item .title-remove {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+  }
+
+  .invoice-creator .services .service-item .title-remove .btn-no-fill {
+    margin-bottom: unset;
+    
+  }
+}
+
+.invoice-creator .invoice .notes-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.invoice-creator .invoice .print-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.invoice-creator .invoice .print-amount small {
+  text-align: left;
+  max-width: 130px;
+}
+
+@media (min-width: 700px) {
+  .invoice-creator .invoice .print-amount small {
+    max-width: 160px;
+  }
+
+  .invoice-creator .invoice .print-amount {
+    margin-bottom: 60px;
+  }
+}

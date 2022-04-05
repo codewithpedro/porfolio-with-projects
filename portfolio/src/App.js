@@ -7,6 +7,7 @@ import ScrollToTop from './components/ScrollToTop';
 import TravelJournal from './components/travel-journal/TravelJournal';
 import DigitalCard from './components/digital-business-card/DigitalCard';
 import PasswordGenerator from './components/password-generator/PasswordGenerator';
+import InvoiceCreator from './components/invoice-creator/InvoiceCreator';
 
 function App() {
   // is local storage for mode null
@@ -38,6 +39,7 @@ function App() {
         <Route path="/travel-journal" element={<TravelJournal toggleMode={toggleMode} mode={isDarkMode} />} />
         <Route path="/digital-business-card" element={<DigitalCard toggleMode={toggleMode} mode={isDarkMode} />} />
         <Route path="/password-generator" element={<PasswordGenerator toggleMode={toggleMode} mode={isDarkMode} />} />
+        <Route path="/invoice-creator" element={<InvoiceCreator toggleMode={toggleMode} mode={isDarkMode} />} />
         
       </Routes>
     </div>
