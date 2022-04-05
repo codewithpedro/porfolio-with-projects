@@ -9,6 +9,9 @@
   --clr-sunset-pink: 12 100% 74%;
   --clr-light-grey: 0 0% 44%;
   --clr-yellow: 60 92% 64%;
+
+  /* Font family */
+  --ff-1: "Work Sans", sans-serif;
 }
 
 /* Layout */
@@ -18,6 +21,7 @@
 .unit-convertor {
   position: relative;
   text-align: center;
+  font-family: var(--ff-1);
 }
 
 .unit-convertor .main .title {

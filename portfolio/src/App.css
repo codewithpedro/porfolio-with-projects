@@ -252,6 +252,10 @@ body {
   border: 0;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 /* ------------------- */
 /* Layout              */
 /* ------------------- */
@@ -1233,10 +1237,11 @@ body {
 
 .footer-nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
+  margin-bottom: 20px;
 }
-
-
 
 @media (min-width: 900px) {
   .footer-nav  {
@@ -1246,7 +1251,7 @@ body {
 }
 
 .footer-logo {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .light .footer-logo .text-colored {
@@ -1258,9 +1263,15 @@ body {
 }
 
 @media (min-width: 900px) {
+  .footer {
+    text-align: left;
+  }
   .footer-flex {
     display: flex;
     justify-content: space-between;
+  }
+  .footer-nav {
+    align-items: flex-start;
   }
 }
 
