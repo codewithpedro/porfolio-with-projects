@@ -10,7 +10,7 @@ export default function Length(props) {
   const userInput = props.input || 0;
 
   return (
-    <div className="unit-conversion">
+    <div className="unit">
       <h5 className="title">Length (Meter / Feet)</h5>
       <p>{userInput} meters = {metersToFeet(userInput)} feet</p> 
       <p>{userInput} feet = {feetToMetters(userInput)} meters</p>

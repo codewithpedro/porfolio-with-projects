@@ -3,6 +3,7 @@ import './App.css';
 import {Routes, Route} from "react-router-dom";
 import Home from './components/home/Home';
 import UnitConverter from './components/unit-converter/UnitConverter';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   // is local storage for mode null
@@ -24,12 +25,13 @@ function App() {
     
   }
 
+  ScrollToTop();
+
   return (
     <div>
       <Routes>
         <Route exact path="/" element={<Home toggleMode={toggleMode} mode={isDarkMode}/>} />
         <Route path="/unit-converter" element={<UnitConverter toggleMode={toggleMode} mode={isDarkMode}/>} />
-
       </Routes>
     </div>
   );

@@ -15,22 +15,22 @@
 
 /* Layout */
 
-.card {
-  margin-top: 20px;
+.unit-convertor {
+  position: relative;
   text-align: center;
 }
 
-.card--main .title {
+.unit-convertor .main .title {
   margin-bottom: 25px;
 }
 
  
-.light .card h3, 
-.light .card p {
+.light .unit-convertor h3, 
+.light .unit-convertor p {
   color: hsl(var(--clr-soft-black));
 }
 
-.card--main input {
+.unit-convertor .main input {
   background-color: transparent;
   border: grey 3px solid;
   border-radius: 10px;
@@ -38,52 +38,61 @@
   text-align: center;
   width: 100%;
   margin-bottom: 40px;
-  color: inherit;
+  color: hsl(var(--clr-white));
+}
+
+.light .unit-convertor .main input {
+  color: hsl(var(--clr-soft-black));
 }
 
 @media (min-width: 500px) {
-  .card--main input {
+  .unit-convertor .main input {
     width: 400px;
   }
 }
 
-.card--main input::placeholder {
+.unit-convertor .main input::placeholder {
   font-size: 30px;
-  color: inherit;
+  color: hsl(var(--clr-white) / .7)
 }
 
-.card--main input:-moz-placeholder { /* Firefox 18- */
+.light .unit-convertor .main input::placeholder {
+  font-size: 30px;
+  color: hsl(var(--clr-soft-black) / .7);
+}
+
+.unit-convertor .main input:-moz-placeholder { /* Firefox 18- */
   text-align: center;  
 }
 
-.card--main input::-moz-placeholder {  /* Firefox 19+ */
+.unit-convertor .main input::-moz-placeholder {  /* Firefox 19+ */
   text-align: center;  
 }
 
-.card--main input:-ms-input-placeholder {  
+.unit-convertor .main input:-ms-input-placeholder {  
   text-align: center; 
 }
 
 /* Remove inputs for number */
-.card input::-webkit-outer-spin-button,
-.card input::-webkit-inner-spin-button {
+.unit-convertor .main input::-webkit-outer-spin-button,
+.unit-convertor .main input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
-.card input[type=number] {
+.unit-convertor .main input[type=number] {
     -moz-appearance:textfield; /* Firefox */
 }
 
-.card--conversions .unit-conversion:not(:last-child){
-  margin-bottom: 35px;
+.unit-convertor .conversions .unit:not(:last-child){
+  margin-bottom: 40px;
 }
 
-.unit-conversion .title {
-  margin-bottom: 15px;
+.unit-convertor .conversions .unit .title {
+  margin-bottom: 20px;
 }
 
-.unit-conversion p {
+.unit-convertor .conversions .unit p {
   margin-bottom: 10px;
 }

@@ -595,6 +595,12 @@ body {
   }
 }
 
+@media (min-width: 1400px) {
+  .hero .circle {
+    margin-right: 100px;
+  }
+}
+
 
 @media (min-width: 1500px) {
   .hero .circle {
@@ -908,6 +914,7 @@ body {
 
 .small-project {
   flex: 30%;
+  align-self: flex-end;
 }
 
 @media (min-width: 650px) {
@@ -950,10 +957,12 @@ body {
   margin: 0 auto;
   width: 130px;
   height: 130px;
+  object-fit: cover;
 }
 
 .small-project--title {
   margin: 0px auto;
+  margin-bottom: 20px;
   width: 130px;
   text-align: center;
 }
