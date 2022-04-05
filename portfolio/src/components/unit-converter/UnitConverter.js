@@ -5,7 +5,6 @@ import Length from "./Length";
 import Mass from "./Volume";
 import Volume from "./Mass";
 import "./UnitConverter.css";
-import solving from "../../img/problem-solving-pana.svg";
 
 export default function UnitConverter(props) {
 

@@ -1,0 +1,202 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+:root {
+  /* Colors */
+  --clr-light-dark-blue: 231 16% 24%;
+  --clr-dark-blue: 232 17% 17%;
+  --clr-mid-blue: 201 100% 35%;
+  --clr-white: 0 0% 100%;
+  --clr-black: 0 100% 0%;
+  --clr-soft-black: 0 0% 30%;
+  --clr-sunset-pink: 12 100% 74%;
+  --clr-light-grey: 0 0% 44%;
+  --clr-yellow: 60 92% 64%;
+  --clr-dark-grey: #1a1b21;
+
+  /* Font family */
+  --ff-2: "Inter", sans-serif;
+}
+
+/* ------------------- */
+/* Resets              */
+/* ------------------- */
+
+.digital-card h1,
+.digital-card h3,
+.digital-card h4,
+.digital-card h5,
+.digital-card p {
+  font-weight: 400;
+}
+
+.digital-card h1,
+.digital-card h2,
+.digital-card h4,
+.digital-card h5,
+.digital-card p,
+.digital-card i {
+  color: hsl(var(--clr-white));
+}
+
+.digital-card p {
+  line-height: 1.3;
+}
+
+.digital-card h1 {
+  font-size: 1.5rem;
+}
+
+.digital-card h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.digital-card h3 {
+  font-size: 1rem;
+}
+
+.digital-card p {
+  font-size: 0.8rem;
+}
+
+.digital-card small {
+  font-size: 0.8rem;
+}
+
+.digital-card a {
+  text-decoration: none;
+}
+
+.digital-card ul {
+  list-style: none;
+}
+
+
+/* ------------------- */
+/* Utility             */
+/* ------------------- */
+
+.digital-card .small-width {
+  padding: 0;
+  margin: 0;
+  width: 317px;
+}
+
+/* General */
+.digital-card .sm-container {
+  padding: 0;
+  margin: 0;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+/* ------------------- */
+/* Components          */
+/* ------------------- */
+.digital-card .btn {
+  font-size: 1rem;
+}
+
+.digital-card .btn-small {
+  font-size: 0.8rem;
+}
+
+.light .digital-card .btn-transparent {
+  border: 4px solid hsl(var(--clr-sunset-pink));
+  background-color: transparent;
+}
+
+/* ------------------- */
+/* Layout              */
+/* ------------------- */
+
+.digital-card {
+  font-family: var(--ff-2);
+}
+
+.digital-card-flex{
+  display: flex;
+  justify-content: center;
+}
+
+.digital-card .small-width {
+  background-color: #1a1b21;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.digital-card .portrait--img {
+  margin-bottom: 20px;
+}
+
+.digital-card .portrait--img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.digital-card .info {
+  text-align: center;
+}
+
+.digital-card .info .name {
+  margin-bottom: 20px;
+}
+
+.digital-card .info h1,
+.digital-card .info h3,
+.digital-card .info p {
+  margin-bottom: 10px;
+}
+
+.digital-card .info .contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.digital-card .info .contact .fa-linkedin {
+  color: hsl(var(--black));
+}
+
+.digital-card .interests .title,
+.digital-card .about .title {
+  margin-bottom: 15px;
+}
+
+.digital-card .interests p,
+.digital-card .about p {
+  margin-bottom: 40px;
+}
+
+.digital-card .socials {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  background-color: hsl(var(--clr-black));
+  margin: 0;
+}
+
+.digital-card .socials ul {
+  display: flex;
+  gap: 30px;
+  padding-left: 0;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.digital-card .socials ul li a {
+  font-size: 2rem;
+}
+
+.digital-card .socials ul li i:hover {
+  color: hsl(var(--clr-yellow));
+}
+
+.light .digital-card .socials ul li i:hover {
+  color: hsl(var(--clr-sunset-pink));
+}
