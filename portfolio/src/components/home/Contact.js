@@ -29,7 +29,7 @@ export default function Contact(){
               <textarea name="message" onChange={handleChange}></textarea><br />
               <button className="btn btn-mid"><i className="fa-solid fa-paper-plane"></i> Submit</button>
             </form>
-            <hr></hr>
+            <hr />
             <div className="other-contact">
               <h3 className="heading">Contact me in <br/> other ways</h3>
               <div className="other-contact-flex">

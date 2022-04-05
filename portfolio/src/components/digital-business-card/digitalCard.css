@@ -15,7 +15,9 @@
   --clr-dark-grey: #1a1b21;
 
   /* Font family */
+  --ff-1: "Work Sans", sans-serif;
   --ff-2: "Inter", sans-serif;
+  --ff-3: "Harla", sans-serif;
 }
 
 /* ------------------- */

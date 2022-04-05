@@ -25,6 +25,8 @@
   --fs-1000: 3rem;
   /* Font family */
   --ff-1: "Work Sans", sans-serif;
+  --ff-2: "Inter", sans-serif;
+  --ff-3: "Harla", sans-serif;
 }
 
 @media (min-width: 500px) {
@@ -1114,6 +1116,7 @@ body {
   top: 65%;
   font-size: 17rem;
   color: hsl(var(--clr-light-grey) / .1);
+  z-index: -100;
 }
 
 .contact .heading{
