@@ -46,7 +46,7 @@ export default function PasswordGenerator(props){
     <div>
       <Nav handleClick={props.toggleMode} mode={props.mode}/>
       <div className="height">
-        <div className="generator">
+        <div className="password-generator">
           <div className="container">
             <h1 className="title">Generate a <br/><span className="text-green">random password</span></h1>
             <h4 className="subtitle">Never use an insecure password again.</h4>

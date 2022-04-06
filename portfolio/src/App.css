@@ -725,6 +725,7 @@ body {
   background-color: white;
   margin: 0 auto;
   margin-bottom: 20px;
+  object-fit: cover;
 }
 
 @media (min-width: 450px) {
@@ -925,28 +926,17 @@ body {
 .small-projects-flex {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.small-project {
-  flex: 30%;
-  align-self: flex-end;
-}
-
-@media (min-width: 650px) {
-  .small-project {
-    flex: 0 30%;
-  }
+  column-gap: 70px;
 }
 
 @media (min-width: 850px) {
-  .small-project {
-    flex: 15%;
+  .small-projects-flex {
+    column-gap: unset;
+    justify-content: space-between;
   }
 }
-
 
 
 .small-projects .container {
@@ -969,20 +959,21 @@ body {
 
 .small-project {
   margin-bottom: 40px;
+  align-self: flex-end;
 }
 
 .small-project img {
-  margin: 0 auto;
   width: 130px;
   height: 130px;
   object-fit: cover;
 }
 
-.small-project--title {
-  margin: 0px auto;
+.small-project .title {
   margin-bottom: 20px;
-  width: 130px;
+  width: 100px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ------------------- */
