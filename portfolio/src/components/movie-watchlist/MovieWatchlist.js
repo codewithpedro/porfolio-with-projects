@@ -62,7 +62,6 @@ export default function MovieWatchlist(props) {
         savedMovies.push(id);
         localStorage.setItem("savedMovies", JSON.stringify(savedMovies));
         alert("Movie has been saved");
-        console.log(savedMovies);
     } else {
       alert("Movie is already saved");
     }

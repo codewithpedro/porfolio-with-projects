@@ -36,12 +36,13 @@
 }
 
 .light .movie-watchlist .hero .content h2,
-.light .movie-watchlist .hero .content a {
+.light .movie-watchlist .hero .content a,
+.light .saved-movies .hero {
   color: hsl(var(--clr-white));
 }
 
 /* ------------------- */
-/* Layout              */
+/* components          */
 /* ------------------- */
 
 .movie-watchlist .movie .btn-small {
@@ -216,7 +217,6 @@
 
 @media (min-width: 700px) {
   .movie-watchlist .movie {
-    margin-left: 50px;
     align-items: flex-start;
   }
   .movie-watchlist .movie {
@@ -331,8 +331,14 @@
 }
 
 /* ------------------- */
-/* Saved movies             */
+/* Saved movies        */
 /* ------------------- */
+
+.saved-movies .movie-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .saved-movies .hero {
   margin-bottom: 60px;
