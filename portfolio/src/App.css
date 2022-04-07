@@ -16,7 +16,7 @@
   /* Font sizes */
   --fs-200: 0.9rem;
   --fs-300: 1rem;
-  --fs-400: 1.2rem;
+  --fs-400: 1rem;
   --fs-500: 1.2rem;
   --fs-600: 1.2rem;
   --fs-700: 1.5rem;
@@ -45,9 +45,14 @@
 
 @media (min-width: 650px) {
   :root {
-  --fs-400: 1.2rem;
   --fs-500: 1.4rem;
   --fs-900: 1.9rem;
+  }
+}
+
+@media (min-width:700px) {
+  :root {
+    --fs-400: 1rem;
   }
 }
 
@@ -96,7 +101,7 @@ html {
   overflow-x: hidden;
 }
 
-body, h1, h2, h3, h4, h5, p, img {
+body, h1, h2, h3, h4, h5, p, img, header {
   margin: 0;
 }
 
@@ -185,7 +190,6 @@ body {
   padding: 15px;
   border-radius: 10px;
   border: none;
-  margin: 0 auto;
 }
 
 .light .btn {
@@ -377,6 +381,7 @@ body {
 
 @media (max-width: 650px) {
   .navigation--menu nav.active {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -439,7 +444,13 @@ body {
 }
 
 .navigation--menu .social .icon {
-  width: 30px;
+  width: 70px;
+}
+
+@media (min-width: 700px) {
+  .navigation--menu .social .icon {
+    width: 30px;
+  }
 }
 
 .navigation--menu .social *:not(:first-child) {
@@ -855,7 +866,7 @@ body {
 }
 
 .project--content .desc {
-  max-width: 200px;
+  max-width: 300px;
   margin: 0;
   margin-bottom: 0px;
 }
@@ -873,7 +884,7 @@ body {
 
 @media (min-width: 1000px) {
   .project--content .desc {
-    width: 350px;
+    max-width: 450px;
   }
 }
 
@@ -889,6 +900,7 @@ body {
 @media (min-width: 450px) {
   .project--content .btn-flex {
     flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .project--content .btn-preview {
@@ -904,7 +916,7 @@ body {
   }
 
   .project--content .btn-preview {
-    padding: 10px 25px;
+    padding: 13px 25px;
   }
 }
 
@@ -1168,6 +1180,8 @@ body {
   width: 100%;
   height: 100px;
   margin-bottom: 50px;
+  font-family: inherit;
+  font-size: var(--fs-300);
 }
 
 .contact .btn {

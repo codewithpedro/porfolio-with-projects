@@ -9,6 +9,8 @@ import DigitalCard from './components/digital-business-card/DigitalCard';
 import PasswordGenerator from './components/password-generator/PasswordGenerator';
 import InvoiceCreator from './components/invoice-creator/InvoiceCreator';
 import ColorScheme from './components/color-scheme-generator/ColorScheme';
+import MovieWatchlist from './components/movie-watchlist/MovieWatchlist';
+import SavedWatchlist from './components/movie-watchlist/SavedWatchlist';
 
 function App() {
   // is local storage for mode null
@@ -17,7 +19,6 @@ function App() {
   //local storage "mode"
   const [isDarkMode, setIsDarkMode] = useState(isNull ? true : JSON.parse(localStorage.getItem("mode")));
   localStorage.setItem("mode", JSON.stringify(isDarkMode));  
-  localStorage.getItem("mode");
 
   if (isDarkMode) {
     document.body.classList.remove("light");
@@ -27,7 +28,6 @@ function App() {
   
   function toggleMode() {
     setIsDarkMode(prevMode => !prevMode);
-    
   }
 
   ScrollToTop();
@@ -42,6 +42,8 @@ function App() {
         <Route path="/password-generator" element={<PasswordGenerator toggleMode={toggleMode} mode={isDarkMode} />} />
         <Route path="/invoice-creator" element={<InvoiceCreator toggleMode={toggleMode} mode={isDarkMode} />} />
         <Route path="/color-scheme-generator" element={<ColorScheme toggleMode={toggleMode} mode={isDarkMode} />} />
+        <Route exact path="/movie-watchlist" element={<MovieWatchlist toggleMode={toggleMode} mode={isDarkMode} />} />
+        <Route path="/movie-watchlist/saved-movies" element={<SavedWatchlist toggleMode={toggleMode} mode={isDarkMode} />} />
         
       </Routes>
     </div>

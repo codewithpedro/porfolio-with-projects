@@ -20,11 +20,11 @@ export default function Contact(){
         <div className="container">
           <h2 className="heading text-colored">Hire Me</h2>
           <div className="contact-flex">
-            <form>
+            <form action="https://formsubmit.co/gomez.pedro@outlook.com" method="POST">
               <label htmlFor="name">Name:</label><br/>
               <input type="text" id="name" name="name" onChange={handleChange}/><br/>
               <label htmlFor="email">Email:</label><br/>
-              <input type="email" id="email" name="email" onChange={handleChange}/><br/>
+              <input type="email" id="email" name="email" onChange={handleChange} required={true}/><br/>
               <label htmlFor="message">Message:</label><br/>
               <textarea name="message" onChange={handleChange}></textarea><br />
               <button className="btn btn-mid"><i className="fa-solid fa-paper-plane"></i> Submit</button>
