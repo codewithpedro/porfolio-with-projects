@@ -28,11 +28,12 @@
 }
 
 .movie-watchlist .message a {
-  font-weight: 700;
+  font-weight: 500;
 }
 
-.light .movie-watchlist .message h3 {
-  color: hsl(var(--clr-soft-black));
+.light .movie-watchlist .message h3,
+.light .movie-watchlist .message a {
+  color: hsl(var(--clr-white) / .4);
 }
 
 .light .movie-watchlist .hero .content h2,
@@ -344,6 +345,8 @@
   margin-bottom: 60px;
 }
 
-.saved-movies .message h3 {
+.saved-movies .message .title {
   margin-bottom: 20px;
 }
+
+

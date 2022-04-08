@@ -19,9 +19,9 @@ export default function SavedWathchlist(props){
   });
 
   function removeMovieId(id) {
-    setMovieIDList(movieIDList.filter(movieID => movieID !== id));
-    localStorage.setItem("savedMovies", JSON.stringify(movieIDList));
-    
+    const newList = movieIDList.filter(movieID => movieID !== id)
+    localStorage.setItem("savedMovies", JSON.stringify(newList));
+    setMovieIDList(newList);
 }
 
 
@@ -41,7 +41,7 @@ export default function SavedWathchlist(props){
     <div>
       {/* Navigation */}
       <Nav handleClick={props.toggleMode} mode={props.mode}/>
-      <div className="movie-watchlist saved-movies">
+      <div className="movie-watchlist">
         <div className="height">
           <div className="saved-movies">
             <header>

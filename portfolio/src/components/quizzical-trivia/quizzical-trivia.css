@@ -1,0 +1,127 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+:root {
+  /* Colors */
+  --clr-light-dark-blue: 231 16% 24%;
+  --clr-dark-blue: 232 17% 17%;
+  --clr-mid-blue: 201 100% 35%;
+  --clr-white: 0 0% 100%;
+  --clr-black: 0 100% 0%;
+  --clr-soft-black: 0 0% 30%;
+  --clr-sunset-pink: 12 100% 74%;
+  --clr-light-grey: 0 0% 44%;
+  --clr-yellow: 60 92% 64%;
+}
+
+/* ------------------- */
+/* Resets              */
+/* ------------------- */
+
+.quiz-trivia h1{
+  font-size: 3rem;
+}
+
+@media (min-width: 700px) {
+  .quiz-trivia h1{
+    font-size: 4rem;
+  }
+}
+
+.start-quiz h2 {
+  font-size: 1.5rem;
+}
+
+/* ------------------- */
+/* Components          */
+/* ------------------- */
+
+.quiz-trivia .btn {
+  padding: 15px 20px;
+  font-size: 1rem;
+  width: unset;
+}
+
+/* ------------------- */
+/* Layout              */
+/* ------------------- */
+
+/* ------------------- */
+/* Quiz-trivia         */
+/* ------------------- */
+
+.quiz-trivia {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.quiz-trivia .title {
+  margin-bottom: 30px;
+}
+
+.quiz-trivia .subtitle {
+  margin-bottom: 50px;
+}
+
+.quiz-trivia .btn {
+  margin-bottom: 80px;
+}
+
+/* ------------------- */
+/* start-quiz          */
+/* ------------------- */
+.start-quiz {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.start-quiz .question h2 {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 700px) {
+  .start-quiz .question .answers {
+    display: flex;
+  }
+}
+
+
+.start-quiz .question .answers input {
+  display: none;
+}
+
+.start-quiz .question .answers input[type="radio"]:checked+label {
+  background-color: hsl(var(--clr-yellow));
+  color: hsl(var(--clr-black));
+}
+
+.light .start-quiz .question .answers input[type="radio"]:checked+label {
+  background-color: hsl(var(--clr-sunset-pink));
+}
+
+.start-quiz .question .answers label {
+  display: block;
+  border: solid 1px white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 50px;
+  margin-bottom: 40px;
+}
+
+.light .start-quiz .question .answers label {
+  border: solid 1px hsl(var(--clr-black));
+}
+
+@media (min-width: 700px) {
+  .start-quiz .question .answers label {
+    margin-right: 50px;
+    display: flex;
+  }
+}
+
+.start-quiz .question hr {
+  margin-bottom: 50px;
+}

@@ -11,6 +11,8 @@ import InvoiceCreator from './components/invoice-creator/InvoiceCreator';
 import ColorScheme from './components/color-scheme-generator/ColorScheme';
 import MovieWatchlist from './components/movie-watchlist/MovieWatchlist';
 import SavedWatchlist from './components/movie-watchlist/SavedWatchlist';
+import QuizzicalTrivia from './components/quizzical-trivia/QuizzicalTrivia';
+import StartQuiz from './components/quizzical-trivia/StartQuiz';
 
 function App() {
   // is local storage for mode null
@@ -44,7 +46,8 @@ function App() {
         <Route path="/color-scheme-generator" element={<ColorScheme toggleMode={toggleMode} mode={isDarkMode} />} />
         <Route exact path="/movie-watchlist" element={<MovieWatchlist toggleMode={toggleMode} mode={isDarkMode} />} />
         <Route path="/movie-watchlist/saved-movies" element={<SavedWatchlist toggleMode={toggleMode} mode={isDarkMode} />} />
-        
+        <Route exact path="/quizzical-trivia" element={<QuizzicalTrivia toggleMode={toggleMode} mode={isDarkMode} />} />
+        <Route exact path="/quizzical-trivia/start" element={<StartQuiz toggleMode={toggleMode} mode={isDarkMode} />} /> 
       </Routes>
     </div>
   );
