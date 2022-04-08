@@ -1,4 +1,4 @@
-export default function Question(props){
+export default function QuestionTwo(props){
   const displayAnswers = props.answersArray.map((answer, index) => {
     const uniqueName = props.name + "-choice-" + index;
     return (

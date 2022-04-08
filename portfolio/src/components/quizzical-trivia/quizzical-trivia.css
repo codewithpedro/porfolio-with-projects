@@ -37,9 +37,14 @@
 /* ------------------- */
 
 .quiz-trivia .btn {
-  padding: 15px 20px;
+  padding: 15px 50px;
   font-size: 1rem;
   width: unset;
+}
+
+.start-quiz .button-content .btn {
+  font-size: 1.1rem;
+  padding: 20px 50px;
 }
 
 /* ------------------- */
@@ -76,6 +81,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 .start-quiz .question h2 {
@@ -96,6 +102,7 @@
 .start-quiz .question .answers input[type="radio"]:checked+label {
   background-color: hsl(var(--clr-yellow));
   color: hsl(var(--clr-black));
+  border: none;
 }
 
 .light .start-quiz .question .answers input[type="radio"]:checked+label {
@@ -125,3 +132,33 @@
 .start-quiz .question hr {
   margin-bottom: 50px;
 }
+
+label[disabled]:hover,
+label:disabled:hover,
+input[disabled]:hover,
+input:disabled:hover {
+  cursor: not-allowed;
+}
+
+.start-quiz .button-content {
+  display: flex;
+  justify-content: center;
+}
+
+.start-quiz .button-content .score-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .start-quiz .button-content .score-button {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+}
+
