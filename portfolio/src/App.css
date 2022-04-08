@@ -189,13 +189,13 @@ body {
   display: inline-block;
   padding: 15px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid hsl(var(--clr-yellow));
 }
 
 .light .btn {
   background-color: hsl(var(--clr-sunset-pink));
   color: hsl(var(--clr-white));
-  border: none;
+  border: 1px solid hsl(var(--clr-white));
 }
 
 .btn-transparent {
@@ -235,6 +235,10 @@ body {
 
 .light .pill {
   background-color: hsl(var(--clr-white) / .3);
+}
+
+.project .btn-flex .btn .fa-up-right-from-square{
+  margin-right: 10px;
 }
 
 /* ------------------- */
@@ -788,7 +792,13 @@ body {
 .project--flex {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .project--flex {
+    align-items: flex-start;
+  }
 }
 
 .project--content {
@@ -842,7 +852,10 @@ body {
   flex-wrap: wrap;
   max-width: 200px;
   justify-content: center;
+  align-items: center;
   margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 450px) {
