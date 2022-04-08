@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b9e27a72.css",
+    "main.js": "/static/js/main.cb5ce919.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/portrait.png": "/static/media/portrait.bcf61b646d83c81cb48d.png",
+    "static/media/hero-bg.png": "/static/media/hero-bg.536a5c15811bd9261a04.png",
+    "static/media/quiz-class.png": "/static/media/quiz-class.4538faf9e399d67816bf.png",
+    "static/media/self-portrait.jpg": "/static/media/self-portrait.1b43e0c83468d1e73d76.jpg",
+    "static/media/adobe-ps-transparent.svg": "/static/media/adobe-ps-transparent.5f64226fee58a9d9feb32602d17b8079.svg",
+    "static/media/adobe-xd-transparent.svg": "/static/media/adobe-xd-transparent.2095c3197ec476987b1dd427a471f9cf.svg",
+    "static/media/github-square-brands.svg": "/static/media/github-square-brands.bdd05eb0a44d2eff01dd26eaa0b307bb.svg",
+    "index.html": "/index.html",
+    "static/media/sun-solid.svg": "/static/media/sun-solid.4f202eaec73ceeb5c2612e3fd0bcc567.svg",
+    "static/media/x-solid.svg": "/static/media/x-solid.31c815a00a12259495b28c6073fef815.svg",
+    "static/media/linkedin-brands.svg": "/static/media/linkedin-brands.787aa301244425e7fe5bdcff7917892f.svg",
+    "static/media/bars-solid.svg": "/static/media/bars-solid.4de0b64b468d9cdbdd41f4d490765099.svg",
+    "static/media/moon-solid.svg": "/static/media/moon-solid.24663276c05fe9e5c5d44c7b22966454.svg",
+    "main.b9e27a72.css.map": "/static/css/main.b9e27a72.css.map",
+    "main.cb5ce919.js.map": "/static/js/main.cb5ce919.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9e27a72.css",
+    "static/js/main.cb5ce919.js"
+  ]
+}

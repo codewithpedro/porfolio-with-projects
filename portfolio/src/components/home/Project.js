@@ -24,6 +24,7 @@ export default function Project({id, title, img, toolbox, desc, previewUrl, gith
           <p className="desc">{desc}</p>
           <div className="btn-flex">
             <Link className="btn btn-mid btn-white btn-preview" to={previewUrl}><i className="fa-solid fa-up-right-from-square"></i>Preview</Link>
+            
             <a className="btn btn-transparent btn-small" href={githubUrl} target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-github-square"></i> GitHub Code</a>
           </div>
         </div>
