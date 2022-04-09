@@ -37,17 +37,18 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route exact path="/" element={<Home toggleMode={toggleMode} mode={isDarkMode}/>} />
+        <Route path="/" element={<Home toggleMode={toggleMode} mode={isDarkMode}/>} />
         <Route path="/unit-converter" element={<UnitConverter toggleMode={toggleMode} mode={isDarkMode}/>} />
         <Route path="/travel-journal" element={<TravelJournal toggleMode={toggleMode} mode={isDarkMode} />} />
         <Route path="/digital-business-card" element={<DigitalCard toggleMode={toggleMode} mode={isDarkMode} />} />
         <Route path="/password-generator" element={<PasswordGenerator toggleMode={toggleMode} mode={isDarkMode} />} />
         <Route path="/invoice-creator" element={<InvoiceCreator toggleMode={toggleMode} mode={isDarkMode} />} />
         <Route path="/color-scheme-generator" element={<ColorScheme toggleMode={toggleMode} mode={isDarkMode} />} />
-        <Route exact path="/movie-watchlist" element={<MovieWatchlist toggleMode={toggleMode} mode={isDarkMode} />} />
+        <Route path="/movie-watchlist" element={<MovieWatchlist toggleMode={toggleMode} mode={isDarkMode} />} />
         <Route path="/movie-watchlist/saved-movies" element={<SavedWatchlist toggleMode={toggleMode} mode={isDarkMode} />} />
-        <Route exact path="/quizzical-trivia" element={<QuizzicalTrivia toggleMode={toggleMode} mode={isDarkMode} />} />
-        <Route exact path="/quizzical-trivia/start" element={<StartQuiz toggleMode={toggleMode} mode={isDarkMode} />} /> 
+        <Route path="/quizzical-trivia/start" element={<StartQuiz toggleMode={toggleMode} mode={isDarkMode} />} /> 
+        <Route path="/quizzical-trivia" element={<QuizzicalTrivia toggleMode={toggleMode} mode={isDarkMode} />} />
+        <Route path="*" element={<Home toggleMode={toggleMode} mode={isDarkMode}/>} />
       </Routes>
     </div>
   );
