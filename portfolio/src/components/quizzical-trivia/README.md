@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://jovany.dev/quizzical-trivia](https://jovany.dev/quizzical-trivia)
-- Live Site URL: [https://github.com/jovanydev/projects/tree/main/portfolio/src/components/quizzical-trivia](https://your-live-site-url.com)
+- Solution URL: [Jovany Dev Website: Trivia](https://jovany.dev/quizzical-trivia)
+- Live Site URL: [Github Quizzical](https://github.com/jovanydev/projects/tree/main/portfolio/src/components/quizzical-trivia)
 
 ## My process
 
@@ -57,15 +57,17 @@ To see how you can add code snippets, see below:
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
+
 ```css
 .proud-of-this-css {
   color: papayawhip;
 }
 ```
+
 ```js
 const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+  console.log("🎉");
+};
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
