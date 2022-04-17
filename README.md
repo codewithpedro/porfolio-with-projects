@@ -67,9 +67,9 @@ Users should be able to:
 
 ### Main Project Image Preview
 
-![](./quizzical-screenshot.jpg)
-![](./watchlist-screenshot.JPG)
-![](./color-generator-screenshot.JPG)
+<img src="./quizzical-screenshot.jpg" alt="drawing" width="300"/>
+<img src="./watchlist-screenshot.JPG" alt="drawing" width="300"/>
+<img src="./color-generator-screenshot.JPG" alt="drawing" width="300"/>
 
 ## My process
 
