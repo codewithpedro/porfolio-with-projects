@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-<a href="https://jovany.dev/quizzical-trivia"><img src="./quizzical-screenshot.JPG" alt="Front page of quizzical quiz" width="600"/></a>
+<a href="https://jovany.dev/quizzical-trivia"><img src="./quizzical-screenshot.jpg" alt="Front page of quizzical quiz" width="600"/></a>
 
 ### Links
 

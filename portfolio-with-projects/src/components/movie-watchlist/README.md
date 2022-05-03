@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-<a href="https://jovany.dev/quizzical-trivia"><img src="./watchlist-screenshot.jpg" alt="Front page of movie watchlist" width="600"/></a>
+<a href="https://jovany.dev/quizzical-trivia"><img src="./watchlist-screenshot.JPG" alt="Front page of movie watchlist" width="600"/></a>
 
 ### Links
 
