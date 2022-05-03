@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Jovany Dev Website: Movie Watchlist](https://jovany.dev/quizzical-trivia)
-- Solution URL: [Github Quizzical](https://github.com/jovanydev/projects/tree/main/portfolio/src/components/quizzical-trivia)
+- Live Site URL: [Jovany Dev Website: Movie Watchlist](https://jovany.dev/movie-watchlist)
+- Solution URL: [Github Quizzical](https://github.com/jovanydev/porfolio-with-projects/tree/main/portfolio-with-projects/src/components/movie-watchlist)
 
 ## My process
 
