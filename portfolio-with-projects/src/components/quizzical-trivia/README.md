@@ -10,7 +10,6 @@
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -21,11 +20,15 @@
 Users should be able to:
 
 - View the optimal layout for each of the website's pages depending on their device's screen size
-- View each page and be able to toggle between the tabs to see new information
+- Be able to toggle from dark and light mode
+- Take a short quiz
+- Click and decide on the question answers
+- Receive instant feed on correct and wrong answers.
+- Recieve a score base on the correct answers.
 
 ### Screenshot
 
-![](./quizzical-screenshot.jpg)
+<img src="./quizzical-screenshot.jpg" alt="Front page of quizzical quiz" width="300"/>
 
 ### Links
 
@@ -44,36 +47,18 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+A few things I learn were using the useEffect for fetching the API, storing into local storage, and creating a Movie componment to display movie's info (picture, plot summary, rating, ect).
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Next is to develope a netflix style movie list. The movie's information will be hidden until the user hovers or focuses an element to show the information.
 
 ## Author
 
-- Website - Jovany Gomez (jovany.dev)
-- Frontend Mentor - @jovanydev
-  (https://www.frontendmentor.io/profile/jovanydev)
-- Twitter - @itsjovany
-  (https://twitter.com/itsjovany)
+- Website - [Jovany Gomez](jovany.dev)
+- Frontend Mentor - [@jovanydev](https://www.frontendmentor.io/profile/jovanydev)
+- LinkedIn - [Pedro Jovany Gomez](https://www.linkedin.com/in/itsjovany/)
+
+## Acknowledgments
+
+I like to acknowledge [Scrimba](https://scrimba.com/) for having the best platform in helping developers become front end developer. All the knowledage to create this amazing portfolio is thanks to their platform at a small reasonable price.

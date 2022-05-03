@@ -91,8 +91,9 @@ I am working on creating the site into typescript.
 
 ## Author
 
-- Website - [Jovany's Website](https://jovany.dev/)
+- Website - [Jovany Gomez](jovany.dev)
 - Frontend Mentor - [@jovanydev](https://www.frontendmentor.io/profile/jovanydev)
+- LinkedIn - [Pedro Jovany Gomez] (https://www.linkedin.com/in/itsjovany/)
 
 ## Acknowledgments
 
