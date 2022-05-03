@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./color-generator-screenshot.JPG" alt="Front page of color generator" width="600"/>
+<a href="https://jovany.dev/color-scheme-generator" ><img src="./color-generator-screenshot.JPG" alt="Front page of color generator" width="600"/></a>
 
 ### Links
 

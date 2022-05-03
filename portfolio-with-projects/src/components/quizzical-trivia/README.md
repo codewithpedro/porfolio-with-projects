@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./quizzical-screenshot.jpg" alt="Front page of quizzical quiz" width="600"/>
+<a href="https://jovany.dev/quizzical-trivia"><img src="./quizzical-screenshot.JPG" alt="Front page of quizzical quiz" width="600"/></a>
 
 ### Links
 
-- Solution URL: [Jovany Dev Website: Trivia](https://jovany.dev/quizzical-trivia)
-- Live Site URL: [Github Quizzical](https://github.com/jovanydev/projects/tree/main/portfolio/src/components/quizzical-trivia)
+- Live Site URL: [Jovany Dev Website: Trivia](https://jovany.dev/quizzical-trivia)
+- Solution URL: [Github Quizzical](https://github.com/jovanydev/projects/tree/main/portfolio/src/components/quizzical-trivia)
 
 ## My process
 
