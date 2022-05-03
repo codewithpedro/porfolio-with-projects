@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./color-generator-screenshot.jpg" alt="Front page of color generator" width="600"/>
+<img src="./color-generator-screenshot.JPG" alt="Front page of color generator" width="600"/>
 
 ### Links
 
