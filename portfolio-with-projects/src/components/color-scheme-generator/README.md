@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Jovany Dev Website: Trivia](https://jovany.dev/color-scheme-generator)
+- Live Site URL: [Jovany Dev Website: Color Scheme Generator](https://jovany.dev/color-scheme-generator)
 - Solution URL: [Github Quizzical](https://github.com/jovanydev/porfolio-with-projects/tree/main/portfolio-with-projects/src/components/color-scheme-generator)
 
 ## My process
