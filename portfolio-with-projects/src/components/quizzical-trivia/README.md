@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./quizzical-screenshot.jpg" alt="Front page of quizzical quiz" width="300"/>
+<img src="./quizzical-screenshot.jpg" alt="Front page of quizzical quiz" width="600"/>
 
 ### Links
 

@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./watchlist-screenshot.jpg" alt="Front page of movie watchlist" width="300"/>
+<img src="./watchlist-screenshot.jpg" alt="Front page of movie watchlist" width="600"/>
 
 ### Links
 
