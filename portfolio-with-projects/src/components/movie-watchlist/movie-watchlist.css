@@ -20,6 +20,29 @@
 }
 .movie-watchlist small {
   font-size: 1rem;
+  padding: 10px;
+}
+
+.movie-watchlist .btn-primary {
+  font-size: 1rem;
+  background-color: hsl(var(--clr-light-grey));
+  padding: 10px;
+}
+
+.movie-watchlist .btn-primary:hover {
+  background-color: hsl(var(--clr-yellow));
+  color: black;
+}
+
+.light .movie-watchlist .btn-primary {
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+.light .movie-watchlist .btn-primary:hover {
+  background-color: hsl(var(--clr-mid-blue));
+  color: white;
 }
 
 .movie-watchlist .message h3,
@@ -152,6 +175,7 @@
   border: 1px solid gray;
 }
 
+
 .movie-watchlist .search button {
   border: none;
   padding: 10px 25px;
@@ -161,6 +185,12 @@
   font-size: var(--fs-300);
   width: 70%;
 }
+
+.movie-watchlist .search button:hover{
+  background-color: hsl(var(--clr-yellow));
+  color: black;
+}
+
 
 @media (min-width: 600px) {
   .movie-watchlist .search button,
@@ -189,7 +219,11 @@
   color: hsl(var(--clr-soft-black));
   font-weight: 600;
   border: 1px solid gray;
+}
 
+.light .movie-watchlist .search button:hover {
+  background-color: hsl(var(--clr-mid-blue));
+  color: white;
 }
 
 /* MESSAGE */
@@ -322,12 +356,15 @@
 
 .movie-watchlist .movie .desc {
   max-width: 250px;
-  text-align: left;
+  text-align: center;
+  margin-inline: auto;
 }
 
 @media (min-width: 700px) {
   .movie-watchlist .movie .desc {
+    text-align: left;
     max-width: 400px;
+    margin-inline: unset;
   }
 }
 

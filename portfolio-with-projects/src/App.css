@@ -192,10 +192,23 @@ body {
   border: 1px solid hsl(var(--clr-yellow));
 }
 
+.btn:hover {
+  background-color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
 .light .btn {
   background-color: hsl(var(--clr-sunset-pink));
   color: hsl(var(--clr-white));
   border: 1px solid hsl(var(--clr-white));
+}
+
+.light .btn:hover {
+  background-color: hsl(var(--clr-mid-blue));
+  border: 1px solid hsl(var(--clr-mid-blue));
+  color: white;
+  cursor: pointer;
 }
 
 .btn-transparent {
@@ -204,7 +217,17 @@ body {
   color: hsl(var(--clr-white));
 }
 
+.btn-transparent:hover {
+  background-color: unset;
+  border: 3px solid white;
+}
+
 .light .btn-transparent {
+  border: 3px solid hsl(var(--clr-white));
+}
+
+.light .btn-transparent:hover {
+  background-color: unset;
   border: 3px solid hsl(var(--clr-white));
 }
 

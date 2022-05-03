@@ -7,7 +7,7 @@ export default [
     desc: "Are you the smartest person in your class or group? Test your general knowledge by taking this small 5 question quiz. Quizzica Trivia App is a short quiz about any topic in the world.",
     descExtra: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     previewUrl: "/quizzical-trivia",
-    githubUrl: "https://github.com/jovanydev/projects/tree/main/portfolio/src/components/quizzical-trivia"
+    githubUrl: "https://github.com/jovanydev/porfolio-with-projects/tree/main/portfolio-with-projects/src/components/quizzical-trivia"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export default [
     desc: "Want to save a movie to watch later? Search any movie on the Movie Watchlist App and save any movie on a list locally on your computer.",
     descExtra: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     previewUrl: "/movie-watchlist",
-    githubUrl: "https://github.com/jovanydev/projects/tree/main/portfolio/src/components/movie-watchlist"
+    githubUrl: "https://github.com/jovanydev/porfolio-with-projects/tree/main/portfolio-with-projects/src/components/movie-watchlist"
   },
   {
     id: 3,
@@ -27,6 +27,6 @@ export default [
     desc: "Need a color pallet for your website, art, or portfolio? The Color generator will create a color scheme of 5 colors depending on color and type.",
     descExtra: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     previewUrl: "/color-scheme-generator",
-    githubUrl: "https://github.com/jovanydev/projects/tree/main/portfolio/src/components/color-scheme-generator"
+    githubUrl: "https://github.com/jovanydev/porfolio-with-projects/tree/main/portfolio-with-projects/src/components/color-scheme-generator"
   }
 ]

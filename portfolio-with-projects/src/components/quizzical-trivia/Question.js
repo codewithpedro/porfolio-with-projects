@@ -7,6 +7,7 @@ export default function Question(props){
         <label htmlFor={uniqueName}>{answer}</label>
       </div>)
   })
+  
   return (
     <div className="question">
       <h2>{props.question}</h2>

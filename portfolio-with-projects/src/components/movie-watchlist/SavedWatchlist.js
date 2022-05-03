@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import MovieElement from "./MovieElement";
 
 export default function SavedWathchlist(props){
-  console.log("rendering");
   const isNullSavedMovies = localStorage.getItem("savedMovies") === null;
 
   const [movieIDList, setMovieIDList] = useState(isNullSavedMovies ? [] : JSON.parse(localStorage.getItem("savedMovies")));
@@ -38,7 +37,7 @@ export default function SavedWathchlist(props){
   }, [movieIDList]);
   
   return (
-    <div>
+    <>
       {/* Navigation */}
       <Nav handleClick={props.toggleMode} mode={props.mode}/>
       <div className="movie-watchlist">
@@ -48,7 +47,7 @@ export default function SavedWathchlist(props){
               <div className="hero">
                   <div className="content">
                       <h1 className="title">My Watchlist</h1>
-                      <Link to="/movie-watchlist"><small>Search for movies</small></Link>
+                      <Link to="/movie-watchlist"><small className="btn-primary">Search for movies</small></Link>
                   </div>
               </div>
               </header>
@@ -67,6 +66,6 @@ export default function SavedWathchlist(props){
           </div>
         </div>
       <Footer />
-    </div>
+    </>
   )
 }

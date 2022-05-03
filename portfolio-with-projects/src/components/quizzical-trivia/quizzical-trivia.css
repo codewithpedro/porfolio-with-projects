@@ -47,6 +47,24 @@
   padding: 20px 50px;
 }
 
+.quiz-trivia .btn,
+.start-quiz .btn {
+  cursor: pointer;
+}
+
+.quiz-trivia .btn:hover,
+.start-quiz .btn:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.light .quiz-trivia .btn:hover,
+.light .start-quiz .btn:hover {
+  background-color: hsl(var(--clr-mid-blue));
+  color: white;
+  border: none;
+}
+
 /* ------------------- */
 /* Layout              */
 /* ------------------- */
@@ -67,11 +85,22 @@
 }
 
 .quiz-trivia .subtitle {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
-.quiz-trivia .btn {
-  margin-bottom: 80px;
+.quiz-trivia img {
+  margin-bottom: 40px;
+}
+
+.quiz-trivia .btn:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+
+.light .quiz-trivia .btn:hover {
+  cursor: pointer;
+  background-color: hsl(var(--clr-mid-blue));
 }
 
 /* ------------------- */
@@ -99,6 +128,18 @@
   display: none;
 }
 
+.start-quiz .question .answers label:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.light .start-quiz .question .answers label:hover {
+  background-color: hsl(var(--clr-mid-blue));
+  color: white;
+  cursor: pointer;
+}
+
 .start-quiz .question .answers input[type="radio"]:checked+label {
   background-color: hsl(var(--clr-yellow));
   color: hsl(var(--clr-black));
@@ -107,6 +148,7 @@
 
 .light .start-quiz .question .answers input[type="radio"]:checked+label {
   background-color: hsl(var(--clr-sunset-pink));
+  color: black;
 }
 
 .start-quiz .question .answers label {
@@ -133,11 +175,13 @@
   margin-bottom: 50px;
 }
 
-label[disabled]:hover,
-label:disabled:hover,
-input[disabled]:hover,
-input:disabled:hover {
+.start-quiz .question .answers label[disabled]:hover,
+.start-quiz .question .answers label:disabled:hover,
+.start-quiz .question .answers input[disabled]:hover,
+.start-quiz .question .answers input:disabled:hover {
   cursor: not-allowed;
+  background-color: unset;
+  color: unset;
 }
 
 .start-quiz .button-content {

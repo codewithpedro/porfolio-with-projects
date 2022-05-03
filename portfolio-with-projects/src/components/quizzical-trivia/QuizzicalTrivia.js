@@ -14,8 +14,8 @@ export default function QuizzicalTrivia(props){
             <div className="content">
               <h1 className="title">Quizzical</h1>
               <p className="subtitle">A quick quizz for the mind</p>
-              <Link to="/quizzical-trivia/start"><button className="btn">Start quiz</button></Link>
               <img src={quizImg} alt="student learning in class" />
+              <Link to="/quizzical-trivia/start"><button className="btn">Start quiz</button></Link>
             </div>
           </div>
         </div>

@@ -90,7 +90,7 @@ export default function MovieWatchlist(props) {
             <div className="hero">
                 <div className="content">
                     <h2 className="title">Find Your Film</h2>
-                    <Link to="/movie-watchlist/saved-movies"><small>My Watchlist</small></Link>
+                    <Link to="/movie-watchlist/saved-movies"><small className="btn-primary">My Watchlist</small></Link>
                 </div>
             </div>
           </header>
